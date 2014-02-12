@@ -1,0 +1,27 @@
+---
+layout: post
+title: Problem with Virtualbox?
+categories:
+- fedora
+- how to
+- linux
+tags:
+- ! '"/etc/init.d/vboxdrv setup"'
+- dkms
+- Fedora
+- kernel
+- linux
+- virtualbox
+status: publish
+type: post
+published: true
+meta:
+  _wpas_done_twitter: '1'
+  publicize_results: a:1:{s:7:"twitter";a:1:{i:42675044;a:2:{s:7:"user_id";s:10:"suganthi14";s:7:"post_id";s:18:"144073403538735104";}}}
+  _elasticsearch_indexed_on: '2011-12-06 15:19:09'
+---
+Virtualbox doesnt function normally if you have upgraded your kernel. So remove the older versions of your kernel after each upgrade. Else, you wont be able to start a virtual OS by hitting start. You will get an error saying run "/etc/init.d/vboxdrv setup".
+<blockquote>To see the list of kernels available, type<strong> rpm -qa kernel</strong>.
+To remove older kernels, type <strong>rpm -e kernel-&lt;version&gt;</strong>
+Then run <strong>/etc/init.d/vboxdrv setup</strong></blockquote>
+Now your virtual os will start normally.

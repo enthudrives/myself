@@ -1,0 +1,38 @@
+---
+layout: post
+title: Installing Openoffice 3.1 in Linux
+categories:
+- how to
+tags:
+- OOO310_m19_native_packed-1_en-US.9420
+- openoffice install linux
+- openoffice.org-ure-1.5.1-9420.i586.rpm
+status: publish
+type: post
+published: true
+meta:
+  _wp_old_slug: ''
+  _wpas_done_twitter: '1'
+  _elasticsearch_indexed_on: '2010-07-11 17:17:22'
+  _oembed_fda36719007d41fef79d968d4abdc3c7: ! '{{unknown}}'
+---
+The best way to install any software package is via terminal. But for those who are not comfortable with it, there are alternatives.
+
+Download the package from <a href="http://download.openoffice.org/">http://download.openoffice.org/</a>
+
+Extract the package. Go to the folder RPMS. You will have a lot of rpm files in it. Install them one by one in the right order(In the order it is displayed by default). Because they are dependent on each other.
+
+The last package <em>"openoffice.org-ure-1.5.1-9420.i586.rpm"</em><em></em> would show some error.
+<blockquote><code>Cannot install ~/OOO310_m19_native_packed-1_en-US.9420/RPMS/openoffice.org-ure-1.5.1-9420.i586.rpm  as no transaction</code></blockquote>
+Leave it.
+
+Install the menu rpm from the subfolder for menus under rpms.
+
+You will now be able to see the list of open office packages available under Applications-&gt;Office. But clicking it would not open the application. This means link is not established between the menu and the package.
+
+As root user, type the following
+<blockquote><code>
+cd /opt/openoffice.org/basis3.1
+mv ure-link  ure-link.backup
+ln -s /usr/lib/openoffice.org/ure ure-link</code></blockquote>
+Done!

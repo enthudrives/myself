@@ -1,0 +1,63 @@
+---
+layout: post
+title: Fedora for beginners
+categories:
+- fedora
+- how to
+tags:
+- cannot retrieve repository metadata repomd.xml error
+- Fedora
+- fedora beginner
+- fedora proxy
+- install fedora
+- install linux
+- repomd.xml
+status: publish
+type: post
+published: true
+meta:
+  _wpas_mess: ! 'Fedora for beginners: http://wp.me/pY7lb-1p'
+  blogger_blog: scribbletechie.blogspot.com
+  blogger_author: Suganthi
+  blogger_caffe66268814e92e027d29f73d5083d_permalink: '6908342749049531950'
+  _wpas_done_twitter: '1'
+  _oembed_c66c4bdbc16a2ee99c85a0e82cbc0bfa: ! '{{unknown}}'
+  _oembed_855046de57a265e9316783202c715279: ! '{{unknown}}'
+  _oembed_88de0ad485edbe15e1d85add4654474c: ! '{{unknown}}'
+  _oembed_790fc51d4f6a8d62138664def098b75a: ! '{{unknown}}'
+  _oembed_65550988c3db44b331a1adde857daef6: ! '{{unknown}}'
+  _oembed_91e87cc5239a34550823c81b4db0d719: ! '{{unknown}}'
+  _oembed_ba3bacc4805253df8a046a290eeae422: ! '{{unknown}}'
+  _oembed_6a8697dc0bed951d786497e0941601af: ! '{{unknown}}'
+  _oembed_2a2ed66a30acb9f01e4387e6cd07e84f: ! '{{unknown}}'
+  _oembed_6c0e76037165c74e6f5cccbc941b94a6: ! '{{unknown}}'
+  _elasticsearch_indexed_on: '2009-11-12 17:05:00'
+---
+I was using Ubuntu and Windows in my laptop for a long period of time. As we are behind a proxy in college and when I go home, I had to change the settings often. So I used ubuntu only when I went home. At a point of time, I very badly wanted to quit windows. Though I like ubuntu, I had a special attraction towards fedora. I installed fedora 11 in my laptop on 1st Nov,2009. Now my laptop has only Fedora. It took one full day to set my laptop to use. ie, to access net, additional packages like unrar, flash etc. I think there will be many noobs like me, who need help to do the installation quicker.  Here I list those which I did as soon as the installation was over.(To access internet)
+
+*If you are behind a proxy,Change the proxy settings. You could find a file "yum.conf" in \etc directory. Include these two lines in the file
+<div style="text-align:left;">proxy=http://proxyaddress:portnumber</div>
+<div style="text-align:left;">timeout=300</div>
+Then, you need to install RPM fusion repositories(free and non-free)
+
+
+<blockquote>http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+</blockquote>
+
+
+Now we are done. You can access internet from your newly installed fedora. :)
+
+Some additional packages which you would need: (You must be the root user to install softwares.Type "su" in the terminal)
+
+<span style="font-weight:bold;">Adobe flash plug-in</span>:
+
+Get the rpm file from http://get.adobe.com/flashplayer
+
+Or type <span style="font-weight:bold;">yum install flash-plugin</span>
+
+<span style="font-weight:bold;">VLC:</span>
+
+<span style="font-weight:bold;">yum install vlc </span>
+
+I think these basic packages are enough to start surfing around :)

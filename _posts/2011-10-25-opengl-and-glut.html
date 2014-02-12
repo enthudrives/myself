@@ -1,0 +1,26 @@
+---
+layout: post
+title: OpenGL and glut
+categories:
+- c++
+- fedora
+- glut
+- graphics programming
+- install
+- opengl
+- yum install g++
+tags:
+- Fedora
+- gcc
+- glut
+- opengl
+status: publish
+type: post
+published: true
+meta:
+  blogger_blog: tsuganthi.blogspot.com
+  blogger_author: Suganthi
+  blogger_ea93ebb5239c2113ce87ddfbc8ce1c4e_permalink: '4921215242475854799'
+  _elasticsearch_indexed_on: '2011-10-25 13:23:00'
+---
+<div dir="ltr" style="text-align:left;"><div><span style="font-size:small;">To install OpenGL and glut in fedora,</span></div><div><span style="font-size:small;"><br /></span></div><div><span style="font-size:small;">Type in the following commands as root user.. </span></div><div><span style="font-size:small;"><br /></span></div><div><span style="font-size:small;">If you donot have C++, Instal it </span></div><div><span style="font-size:small;">              </span><span style="font-size:small;">#yum install gcc-c++</span></div><div><span style="font-size:small;">Then install the freeglut devel package</span></div><div><span style="font-size:small;">                   </span><span style="font-size:small;">#yum install freeglut-devel</span></div><div><span style="font-size:small;"><br /></span></div><div><span style="font-size:small;">Compile your c++ code as</span></div><div><span style="font-size:small;"><br /></span></div><div><span style="font-size:small;">               </span><span style="font-size:small;">g++ -L/usr/lib filename.cpp -lglut -lGL -lGLU</span></div><div><span style="font-size:small;"><br /></span></div><div><span style="font-size:small;">In the above command,we instruct g++ compiler to fetch glut, gl, glu libraries from /usr/lib</span></div><div><span style="font-size:small;"><br /></span></div><div><span style="font-size:small;"><br /></span></div><div><span style="font-size:small;">Things to remember: </span></div><div><span style="font-size:small;">#include // not GLUT/glut.h</span></div><div><span style="font-size:small;">#include //not iostream.h</span></div></div><div class="blogger-post-footer"><img width='1' height='1' src='' alt='' /></div>
