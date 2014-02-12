@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Installing drupal on LAMP</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>Installing drupal on LAMP</h2>
+<p class="meta">02 Feb 2011</p>
+
+<div class="post">
+Download drupal from http://drupal.org/download
+
+I prefer drupal-6.20 to drupal-7.0. Download any version of your choice. (say drupal-x.y)
+
+Extract the tar file. You get a folder named drupal-x.y. 
+Rename drupal-x.y/sites/default/default.settings.php to drupal-x.y/sites/default/settings.php
+Create a directory named sites under /var/www/html
+Move the folder drupal-x.y to /var/www/html/sites
+
+Create a new database for your site.
+
+
+<blockquote>mysqladmin -u username -p create databasename </blockquote>
+
+
+
+Log in and set the access database rights:
+
+
+<blockquote>mysql -u username -p
+</blockquote>
+
+
+
+
+<blockquote>GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON `databasename`.* TO 'username'@'localhost' IDENTIFIED BY 'password'; </blockquote>
+
+
+
+
+
+<blockquote>FLUSH PRIVILEGES;</blockquote>
+
+
+
+
+Run your apache server and mysql server.
+
+
+<blockquote>
+service httpd start
+service mysqld start</blockquote>
+
+
+
+
+Now open http://localhost/sites in your browser.
+
+Click on drupal-x.y. Follow the instructions provided there and complete your installation.
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

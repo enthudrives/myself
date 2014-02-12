@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Installing Openoffice 3.1 in Linux</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>Installing Openoffice 3.1 in Linux</h2>
+<p class="meta">11 Jul 2010</p>
+
+<div class="post">
+The best way to install any software package is via terminal. But for those who are not comfortable with it, there are alternatives.
+
+Download the package from <a href="http://download.openoffice.org/">http://download.openoffice.org/</a>
+
+Extract the package. Go to the folder RPMS. You will have a lot of rpm files in it. Install them one by one in the right order(In the order it is displayed by default). Because they are dependent on each other.
+
+The last package <em>"openoffice.org-ure-1.5.1-9420.i586.rpm"</em><em></em> would show some error.
+<blockquote><code>Cannot install ~/OOO310_m19_native_packed-1_en-US.9420/RPMS/openoffice.org-ure-1.5.1-9420.i586.rpm  as no transaction</code></blockquote>
+Leave it.
+
+Install the menu rpm from the subfolder for menus under rpms.
+
+You will now be able to see the list of open office packages available under Applications-&gt;Office. But clicking it would not open the application. This means link is not established between the menu and the package.
+
+As root user, type the following
+<blockquote><code>
+cd /opt/openoffice.org/basis3.1
+mv ure-link  ure-link.backup
+ln -s /usr/lib/openoffice.org/ure ure-link</code></blockquote>
+Done!
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
