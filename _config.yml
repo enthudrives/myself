@@ -2,5 +2,6 @@ name: Random Ramblings
 description: Just some space where I pour my heart out. Suganthi's personal space
 markdown: redcarpet
 pygments: true
+paginate: 10
 permalink: /:year/:month/:day/:title
 url: enthudrives.me
