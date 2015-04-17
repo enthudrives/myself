@@ -1,49 +1,85 @@
----
-layout: default
-title: Solar Theme
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Random Rambligs by enthudrives</title>
+  </head>
 
-{% for post in paginator.posts %}
+  <body>
+    <div id="container">
+      <div class="inner">
 
-	<article class="post">
+        <header>
+          <h1>Random Rambligs</h1>
+          <h2>This is real. This is me.</h2>
+        </header>
 
-		{% if post.external-url %}
-			<h1>
-				<a href="{{ post.external-url }}">{{ post.title }}</a>
-				<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-			</h1>
-		{% else %}
-			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		{% endif %}
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/enthudrives/myself/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/enthudrives/myself/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/enthudrives/myself" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-		<div class="post-content">{{ post.content }}</div>
+        <hr>
 
-	</article>
+        <section id="main_content">
+          <p>Though 2013 started off quiet, with me sitting idle in my flat, it turned out to be quite an eventful year.
+Just like anyother year, 2013 was filled with ups and downs. But looking back, I had a great year. A lot of firsts happened in 2013.</p>
 
-{% endfor %}
+<p>Here's my first bike. Honda Activa.</p>
 
+<p>[caption id="" align="aligncenter" width="150"]<img alt="Honda Activa" src="https://pbs.twimg.com/media/BJl-pcJCAAEWz4o.jpg:thumb" width="150" height="150"> My first bike[/caption]</p>
 
+<p>Had my first accident as well. Phew :P</p>
 
-{% if paginator.total_pages > 1 %}
-	<div class="postnavigation">
+<p>Took swimming membership in Aquatic Complex. Its a 7 feet deep, 50 metres long pool. Went swimming for 1.5 months in a row, after which I moved to Pune for a Project.</p>
 
-		{% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-				<a class="prev left" href="/">&larr; Newer</a>
-			{% else %}
-				<a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a>
-			{% endif %}
-		{% else %}
-			<span class="nope left">&larr; Newer</span>
-		{% endif %}
+<p>Pune is a lovely city. The weather is pleasant. Drive 2 hours towards any direction and you'll reach a nice hilly village from which you can trek to one of Shivaji's forts. That inspired me to visit as many forts possible before I leave Pune.</p>
 
-		<span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+<p><a href="http://tsuganthi.files.wordpress.com/2014/01/2013-07-13-14-27-33.jpg"><img alt="2013-07-13 14.27.33" src="http://tsuganthi.files.wordpress.com/2014/01/2013-07-13-14-27-33.jpg?w=300" width="300" height="51"></a></p>
 
-		{% if paginator.next_page %}
-			<a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a>
-		{% else %}
-			<span class="nope right">Older &rarr;</span>
-		{% endif %}
+<p>My first trek(in my whole life) was to Rajmachi. That's the longest trek in 2013 as well. Walked 28 kms in total that day. When we reached the Lonavala railway station after the trek, I was walking like a donald duck :P . This trek was followed by a lot more forts.. Pratapghad, Rajghad, Tikona are some other b-e-a-utiful forts that I visited around Pune.</p>
 
-	</div>
-{% endif %}
+<p>Apart from forts, I also visited some beautiful touristy locations like Mahabaleshwar, Kaas Plateau.</p>
+
+<p><img alt="IMG_0009" src="http://tsuganthi.files.wordpress.com/2014/01/img_0009.jpg?w=300" width="300" height="199"></p>
+
+<p>I went there in the 1st weekend of September. That's the right time to be there. Flowers had just blossomed and the place looked like a pink carpet with patterns on it.</p>
+
+<p>The most adventurous day of my life was also in 2013. Went Valley crossing &amp; Rappelling at Duke's nose in Lonavala.</p>
+
+<p>[caption id="attachment_580" align="aligncenter" width="200"]<a href="http://tsuganthi.files.wordpress.com/2014/01/img_3156.jpg"><img alt="Spot me in the picture" src="http://tsuganthi.files.wordpress.com/2014/01/img_3156.jpg?w=200" width="200" height="300"></a> Spot me in the picture[/caption]</p>
+
+<p>Trekked to a 1000 feet high cliff and rappelled down 600 feet. Climbing 600 feet up was an add-on which was hidden in this package. As it had rained the previous night, the rocks were slippery and stones were rolling down. It was a bit scary, but totally worth it.</p>
+
+<p>[caption id="" align="aligncenter" width="104"]<img alt="" src="http://m.ak.fbcdn.net/sphotos-d.ak/hphotos-ak-frc3/p480x480/1458440_10151836508688019_1037353607_n.jpg" width="104" height="138"> Finished 8km run[/caption]</p>
+
+<p>Another achievement in 2013 is, I ran an 8 km Marathon. Yet another 1st in my life. Will definitely continue running in 2014 as well :)</p>
+
+<p>Also, played Tennis, went ice skating(a small rink in Inorbit mall) for the first time.</p>
+
+<p>There were quite a few, 1st of a kind, sad moments as well. But, looking back, none of it matters :)</p>
+
+<p>Such an eventful year it was. Special thanks to all my friends who stayed by my side &amp; shared my happiness and sorrows.  :)</p>
+
+<p>Happy New Year 2014 :)</p>
+        </section>
+
+        <footer>
+          Random Rambligs is maintained by <a href="https://github.com/enthudrives">enthudrives</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
